@@ -58,12 +58,28 @@ tasks:
          sudo apt-get install -y curl
     command: |
          echo "curl installation complete"
+         
+         mkdir checkpoints
+         
+         curl -L -o checkpoints/vqgan_imagenet_f16_16384.yaml -C - "https://heibox.uni-heidelberg.de/d/a7530b09fed84f80a887/files/?p=%2Fconfigs%2Fmodel.yaml&dl=1"#ImageNet 16384
+         
+         curl -L -o checkpoints/vqgan_imagenet_f16_16384.ckpt -C - 'https://heibox.uni-heidelberg.de/d/a7530b09fed84f80a887/files/?p=%2Fckpts%2Flast.ckpt&dl=1' #ImageNet 16384
+
 
   - name: Install required packages 
     init: pip install --upgrade setuptools
-    command:  pip install -r requirements2.txt
+    command: |
+         echo "setuptools installation complete"
+    
+  - name: Install requirements2 and run  
+    init: pip install -r requirements2.txt
+    command:  |
+         echo "requirements2.txt installation complete"
+         python generate.py -vid -o outputs/output.png -ap "imagenet_song.mp3" -lyr "lyrics/imagenet_song_lyrics.csv" -gid 2 -ips 100
+    
     # command: python audio_to_video_converter.py
     # command: gp open main.ipynb
+
 
 # vscode:
 #     extensions:
