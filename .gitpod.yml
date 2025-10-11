@@ -59,8 +59,9 @@ tasks:
     command: |
          echo "curl installation complete"
 
-  - name: Install required packages & Open Jupyter Notebook 
-    init: pip install -r requirements2.txt
+  - name: Install required packages 
+    init: pip install --upgrade setuptools
+    command:  pip install -r requirements2.txt
     # command: python audio_to_video_converter.py
     # command: gp open main.ipynb
 
