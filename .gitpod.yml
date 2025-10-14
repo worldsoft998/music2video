@@ -82,7 +82,7 @@ tasks:
     init: pip install -r requirements2.txt
     command:  |
          echo "requirements2.txt installation complete"
-         python generate.py -vid -o outputs/output.png -ap "imagenet_song.mp3" -lyr "lyrics/imagenet_song_lyrics.csv" -gid 2 -ips 100
+         python generate.py -cd "cpu0" -vid -o outputs/output.png -ap "imagenet_song.mp3" -lyr "lyrics/imagenet_song_lyrics.csv" -gid 2 -ips 100
     
     # command: python audio_to_video_converter.py
     # command: gp open main.ipynb
