@@ -42,7 +42,7 @@ pyasn1-modules
 pyDeprecate
 Pygments
 pyparsing
-pytorch-lightning
+pytorch-lightning==1.4.9
 PyYAML
 regex
 requests
