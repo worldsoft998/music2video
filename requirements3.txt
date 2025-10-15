@@ -7,7 +7,7 @@ backcall
 cachetools
 certifi
 chardet
-CLIP
+clip
 decorator
 einops
 fsspec
