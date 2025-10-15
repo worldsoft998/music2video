@@ -54,7 +54,7 @@ tensorboard
 tensorboard-plugin-wit
 torch
 torchaudio
-torchmetrics
+torchmetrics==0.6.0
 torchvision
 torch-optimizer
 tqdm
