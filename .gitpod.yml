@@ -58,13 +58,12 @@ tasks:
          sudo apt-get install -y curl
     command: |
          echo "curl installation complete"
-         
-         
-         git clone 'https://github.com/nerdyrodent/VQGAN-CLIP'
-         cd VQGAN-CLIP
-         git clone 'https://github.com/openai/CLIP'
-         git clone 'https://github.com/CompVis/taming-transformers'
-         cd ..
+                 
+#          git clone 'https://github.com/nerdyrodent/VQGAN-CLIP'
+#          cd VQGAN-CLIP
+#          git clone 'https://github.com/openai/CLIP'
+#          git clone 'https://github.com/CompVis/taming-transformers'
+#          cd ..
          
          mkdir checkpoints
          
