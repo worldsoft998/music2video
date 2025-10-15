@@ -65,3 +65,4 @@ yarl
 wav2clip
 ffmpeg
 ffmpeg-python
+pandas
