@@ -12,7 +12,7 @@ einops
 fsspec
 ftfy
 future
-google-auth0
+google-auth
 google-auth-oauthlib
 grpcio
 idna
