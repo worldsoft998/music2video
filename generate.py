@@ -83,7 +83,7 @@ torch.backends.cudnn.benchmark = False		# NR: True is a bit faster, but can lead
 
 from torch_optimizer import DiffGrad, AdamP, RAdam
 
-from CLIP import clip
+from clip import clip
 import kornia.augmentation as K
 import numpy as np
 import imageio
